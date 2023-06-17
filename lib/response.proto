@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+message Response {
+  repeated EnumType repeated_enum_list = 1;
+  optional EnumType single_enum_value = 2;
+}
+
+enum EnumType {
+  ENUM_TYPE_A = 0;
+  ENUM_TYPE_B = 1;
+  ENUM_TYPE_C = 2;
+}
